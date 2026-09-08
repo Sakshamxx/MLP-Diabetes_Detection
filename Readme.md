@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF,100:E5383B&height=200&section=header&text=Diabetes%20ML&fontSize=54&fontColor=1A1A1A&fontAlignY=38&animation=fadeIn&desc=MLP-Based%20Diabetes%20Prediction%20System&descAlignY=58&descColor=E5383B&descSize=18" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFFFFF,100:E5383B&height=200&section=header&text=Diabetes%20Detector&fontSize=54&fontColor=1A1A1A&fontAlignY=38&animation=fadeIn&desc=MLP-Based%20Diabetes%20Prediction%20System&descAlignY=58&descColor=E5383B&descSize=18" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=E5383B&center=true&vCenter=true&width=560&lines=Neural+Network+Inference+on+Tabular+Health+Data;StandardScaler+%2B+MLPClassifier+%2B+FastAPI;Educational+%2F+Research+Project" alt="Typing SVG" />
 
