@@ -1,0 +1,100 @@
+/* Subtle Ambient Starlight & Meteor Background */
+.meteor {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 9999px;
+  transform: rotate(-45deg);
+  opacity: 0.35;
+  animation-name: meteor-fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+html.light .meteor,
+[data-theme="light"] .meteor {
+  opacity: 0.12;
+}
+
+.meteor-tail {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  width: 50px;
+  height: 1px;
+  transform: translateY(-50%);
+  opacity: 0.25;
+}
+
+html.light .meteor-tail,
+[data-theme="light"] .meteor-tail {
+  opacity: 0.08;
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translate3d(0, -80px, 0) rotate(-45deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.45;
+  }
+  75% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translate3d(-350px, 350px, 0) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* Ambient Radial Lighting */
+.bg-ambient-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+html.light .bg-ambient-grid,
+[data-theme="light"] .bg-ambient-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+.bg-hero-glow {
+  background: radial-gradient(
+    60% 45% at 50% 15%,
+    rgba(249, 115, 22, 0.065) 0%,
+    rgba(249, 115, 22, 0.015) 45%,
+    transparent 80%
+  );
+}
+
+html.light .bg-hero-glow,
+[data-theme="light"] .bg-hero-glow {
+  background: radial-gradient(
+    60% 45% at 50% 15%,
+    rgba(249, 115, 22, 0.08) 0%,
+    rgba(249, 115, 22, 0.02) 45%,
+    transparent 80%
+  );
+}
+
+.bg-section-glow {
+  background: radial-gradient(
+    50% 40% at 50% 30%,
+    rgba(255, 255, 255, 0.015) 0%,
+    transparent 70%
+  );
+}
+
+html.light .bg-section-glow,
+[data-theme="light"] .bg-section-glow {
+  background: radial-gradient(
+    50% 40% at 50% 30%,
+    rgba(0, 0, 0, 0.02) 0%,
+    transparent 70%
+  );
+}
