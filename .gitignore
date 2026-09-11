@@ -30,8 +30,7 @@ Frontend/.env
 # ML / Model Artifacts
 # ==========================================
 
-*.pkl
-*.pickle
+
 *.joblib
 *.h5
 *.hdf5
@@ -74,7 +73,6 @@ logs/
 # Databases / Local Data
 # ==========================================
 
-*.db
 *.sqlite
 *.sqlite3
 
@@ -107,5 +105,3 @@ Thumbs.db
 # ==========================================
 # Dataset
 # ==========================================
-
-Model/diabetes.csv
